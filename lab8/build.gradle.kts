@@ -28,6 +28,7 @@ dependencies {
 
     // AI-assisted code: Gemini - безпечна залежність для усунення вразливості (Security fix)
     testImplementation("org.apache.commons:commons-compress:1.26.1")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 tasks.test {
