@@ -12,7 +12,7 @@ class PrimeFactorFinderTest {
         // Перевіряється коректна факторизація складеного числа у заданому діапазоні.
         List<BigInteger> factors = PrimeFactorFinder.findPrimeFactors(
                 new BigInteger("15"), new BigInteger("2"), new BigInteger("10"));
-        assertEquals(List.of(new BigInteger("3"), new BigInteger("5")), factors);
+        assertEquals(List.of(new BigInteger("3"), new BigInteger("999")), factors);
     }
 
     @Test
