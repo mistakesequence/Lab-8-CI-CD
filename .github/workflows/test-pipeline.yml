@@ -2,7 +2,7 @@ name: Automated Tests CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "master" ]
 
 jobs:
   test:
@@ -19,5 +19,5 @@ jobs:
         distribution: 'temurin'
 
     - name: Run Tests
-      # Використовуємо глобальний gradle, бо ми не копіювали файли обгортки (wrapper)
+      working-directory: ./lab8   # <--- Вказуємо правильну папку!
       run: gradle test
